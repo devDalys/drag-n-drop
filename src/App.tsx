@@ -34,6 +34,7 @@ function App() {
             >
                 {!dragState ? 'Перетащите файл сюда' : 'Отпустите файл'}
             </div>
+            <input type={'file'} accept=".rar, .zip" onChange={e => console.log(e.target.files)}/>
         </div>
     )
 }
